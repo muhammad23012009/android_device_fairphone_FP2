@@ -104,9 +104,7 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
 
 # Radio
--app/shutdownlistener/shutdownlistener.apk
 -lib/libmdmdetect.so
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|61ddb707d25a574a19315eb573e3cda5416b342e
 bin/netmgrd
 bin/qmuxd
 bin/radish
@@ -116,9 +114,6 @@ etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
-framework/qcnvitems.jar
-framework/qcrilhook.jar
-framework/qti-telephony-common.jar
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
 vendor/lib/libnetmgr.so
@@ -143,7 +138,6 @@ vendor/lib/libthermalioctl.so
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib/libTimeService.so
--app/TimeService/TimeService.apk
 
 # Venus (media) firmware
 etc/firmware/venus.b00
