@@ -135,13 +135,15 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.init_wlan_bt.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
+    init.qcom.bt.sh \
+    init_wlan_bt.sh
 
 # Power
 PRODUCT_PACKAGES += \
