@@ -213,5 +213,10 @@ PRODUCT_PACKAGES += \
 
 # Proximity Calibration is removed for Halium.
 
+# Halium overlay files
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/halium-overlay/etc/rsyslog.conf:system/halium/etc/rsyslog.conf
+
 # Call the proprietary setup
 $(call inherit-product, vendor/fairphone/FP2/FP2-vendor.mk)
