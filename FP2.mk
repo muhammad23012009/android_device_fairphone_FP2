@@ -213,5 +213,9 @@ PRODUCT_PACKAGES += \
 
 # Proximity Calibration is removed for Halium.
 
+# This Qualcomm device needs AFGlue
+PRODUCT_PACKAGES += \
+    libaudioflingerglue
+
 # Call the proprietary setup
 $(call inherit-product, vendor/fairphone/FP2/FP2-vendor.mk)
