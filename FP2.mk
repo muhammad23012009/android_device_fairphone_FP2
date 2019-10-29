@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
 
 # Proximity Calibration is removed for Halium.
 
+# This Qualcomm device needs AFGlue
+PRODUCT_PACKAGES += \
+    libaudioflingerglue
+
 # Halium overlay files
 
 PRODUCT_COPY_FILES += \
