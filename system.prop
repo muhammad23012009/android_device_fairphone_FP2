@@ -105,6 +105,8 @@ ro.telephony.default_network=9,9
 telephony.lteOnGsmDevice=1
 persist.radio.flexmap_type=none
 ro.telephony.ril_class=FP2RIL
+# Ubuntu Touch specific property
+ril.num_slots=2
 
 # sdcardfs
 ro.sys.sdcardfs=true
