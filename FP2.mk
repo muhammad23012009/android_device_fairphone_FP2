@@ -220,9 +220,10 @@ PRODUCT_PACKAGES += \
 # Halium overlay files
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/halium-overlay/etc/init/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf \
     $(LOCAL_PATH)/halium-overlay/etc/rsyslog.conf:system/halium/etc/rsyslog.conf \
-    $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
-    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
+    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
 
 # Call the proprietary setup
 $(call inherit-product, vendor/fairphone/FP2/FP2-vendor.mk)
