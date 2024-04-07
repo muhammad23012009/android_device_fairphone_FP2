@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
 
 # Proximity Calibration is removed for Halium.
 
+# Halium: need minimediaservice since mediaserver is disabled
+PRODUCT_PACKAGES += \
+    minimediaservice
+
 # This Qualcomm device needs AFGlue
 PRODUCT_PACKAGES += \
     libaudioflingerglue
