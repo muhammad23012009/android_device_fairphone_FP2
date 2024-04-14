@@ -30,6 +30,7 @@
 import /init.qcom.usb.rc
 import /init.qcom.power.rc
 import /init.init_wlan_bt.rc
+import /init.ubuntu.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug

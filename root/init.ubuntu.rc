@@ -1,0 +1,8 @@
+on early-boot
+    start minimedia
+
+service minimedia /system/bin/minimediaservice
+    class main
+    user media
+    group audio camera
+    ioprio rt 4
