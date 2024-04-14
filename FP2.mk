@@ -219,7 +219,16 @@ PRODUCT_PACKAGES += \
 
 # This Qualcomm device needs AFGlue
 PRODUCT_PACKAGES += \
-    libaudioflingerglue
+    libaudioflingerglue \
+    minimediaservice \
+    init.ubuntu.rc
+
+# Device adaptation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/lxc-config:system/halium/var/lib/lxc/android/config \
+    $(LOCAL_PATH)/ubuntu/halium.yaml:system/halium/etc/deviceinfo/devices/halium.yaml \
+    $(LOCAL_PATH)/ubuntu/usb-moded.conf:system/halium/etc/default/usb-moded.d/device-specific-config.conf
 
 # Halium overlay files
 

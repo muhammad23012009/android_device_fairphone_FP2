@@ -1,0 +1,20 @@
+FP2:
+  Names:
+    - FP2
+    - Fairphone 2
+
+  PrettyName: Fairphone 2
+  DeviceType: phone
+  GridUnit: 23
+  SupportedOrientations:
+    - Portrait
+    - Landscape
+    - InvertedLandscape
+  MirAndroidPlatformClientEglFlush:
+    - "!/usr/bin/lomiri,all"
+  MirAndroidPlatformServerEglSync:
+    - false
+  MirAndroidPlatformServerPartialUpdates:
+    - true
+  LomiriInteractiveBlur:
+    - true
