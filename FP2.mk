@@ -153,10 +153,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
-# Input device files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -228,7 +224,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/lxc-config:system/halium/var/lib/lxc/android/config \
     $(LOCAL_PATH)/ubuntu/halium.yaml:system/halium/etc/deviceinfo/devices/halium.yaml \
-    $(LOCAL_PATH)/ubuntu/usb-moded.conf:system/halium/etc/default/usb-moded.d/device-specific-config.conf
+    $(LOCAL_PATH)/ubuntu/usb-moded.conf:system/halium/etc/default/usb-moded.d/device-specific-config.conf \
+    $(LOCAL_PATH)/ubuntu/qtwebengine-gpu.sh:system/halium/etc/profile.d/qtwebengine-gpu.sh
 
 # Halium overlay files
 
