@@ -226,6 +226,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/halium.yaml:system/halium/etc/deviceinfo/devices/halium.yaml \
     $(LOCAL_PATH)/ubuntu/usb-moded.conf:system/halium/etc/default/usb-moded.d/device-specific-config.conf \
     $(LOCAL_PATH)/ubuntu/qtwebengine-gpu.sh:system/halium/etc/profile.d/qtwebengine-gpu.sh \
+    $(LOCAL_PATH)/ubuntu/device-hacks:system/halium/usr/libexec/lxc-android-config/device-hacks \
     $(LOCAL_PATH)/overlay/frameworks/base/core/res/res/values/config.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml
 
 # Halium overlay files

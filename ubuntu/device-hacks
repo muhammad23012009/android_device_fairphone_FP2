@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ -e /etc/acdbdata ]; then
+    echo "/etc/acdbdata link already exists."
+    exit 0
+fi
+
+if grep -q -e ' / [a-z0-9]* ro[, ]' /proc/mounts; then
+#                 ^^ FS ^^  ^opts^
+    ROOT_WAS_MOUNTED_RO=1
+    mount -o remount,rw /
+fi
+
+ln -s /system/etc/acdbdata /etc/acdbdata
+
+if [ "$ROOT_WAS_MOUNTED_RO" = "1" ]; then
+    mount -o remount,ro /
+fi
+
+echo "/etc/acdbdata created successfully."
