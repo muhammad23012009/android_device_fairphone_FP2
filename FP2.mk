@@ -229,20 +229,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/device-hacks:system/halium/usr/libexec/lxc-android-config/device-hacks \
     $(LOCAL_PATH)/overlay/frameworks/base/core/res/res/values/config.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml
 
-# Halium overlay files
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/halium-overlay/etc/init/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/rsyslog.conf:system/halium/etc/rsyslog.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-    $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
-
-# Uses framework overlay as repowerd's config.
-# Due to repowerd's bug, config has to be copied to powerd's directory too.
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/overlay/frameworks/base/core/res/res/values/config.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml \
-    $(LOCAL_PATH)/overlay/frameworks/base/core/res/res/values/config.xml:system/halium/usr/share/powerd/device_configs/config-default.xml
-
 # Call the proprietary setup
 $(call inherit-product, vendor/fairphone/FP2/FP2-vendor.mk)
