@@ -164,4 +164,6 @@ TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/recovery
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file"
 
+HALIUM_DATA_AS_CACHE := true
+
 -include vendor/fairphone/FP2/BoardConfigVendor.mk
